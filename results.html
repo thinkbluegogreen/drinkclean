@@ -13,28 +13,102 @@
             <div class="nav-container">
                 <a href="index.html" class="nav-logo">
                     <img src="images/logo-logo.avif" alt="Think Blue Go Green Drink Clean" class="logo-img">
-                    <span class="logo-text">Think Blue Go Green</span>
+                    <span class="logo-text"></span>
                 </a>
-                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
-                    <span class="nav-toggle-line"></span>
-                    <span class="nav-toggle-line"></span>
-                    <span class="nav-toggle-line"></span>
-                </button>
+                <div class="nav-right">
+                    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                        <span class="nav-toggle-line"></span>
+                        <span class="nav-toggle-line"></span>
+                        <span class="nav-toggle-line"></span>
+                    </button>
+                    <div class="lang-selector nav-lang-selector-mobile">
+                        <button class="lang-toggle" id="langToggleMobile" aria-label="Select language">
+                            <img src="images/Flag_of_Europe.svg.png" alt="Language" class="lang-flag" id="currentLangFlagMobile">
+                            <span class="lang-code" id="currentLangCodeMobile">EN</span>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </button>
+                        <ul class="lang-menu" id="langMenuMobile">
+                            <li class="lang-option" data-lang="en">
+                                <img src="images/Flag_of_Europe.svg.png" alt="English" class="lang-flag">
+                                <span>English</span>
+                            </li>
+                            <li class="lang-option" data-lang="tr">
+                                <img src="images/turkey flag.png" alt="Turkish" class="lang-flag">
+                                <span>Türkçe</span>
+                            </li>
+                            <li class="lang-option" data-lang="is">
+                                <img src="images/Iceland flag.png" alt="Icelandic" class="lang-flag">
+                                <span>Íslenska</span>
+                            </li>
+                            <li class="lang-option" data-lang="es">
+                                <img src="images/spain flag.png" alt="Spanish" class="lang-flag">
+                                <span>Español</span>
+                            </li>
+                            <li class="lang-option" data-lang="hu">
+                                <img src="images/Hungary flag.png" alt="Hungarian" class="lang-flag">
+                                <span>Magyar</span>
+                            </li>
+                            <li class="lang-option" data-lang="ca">
+                                <img src="images/spain flag.png" alt="Catalan" class="lang-flag">
+                                <span>Català</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <ul class="nav-menu" id="navMenu">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="index.html" class="nav-link" data-translate="navHome">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="collaborations.html" class="nav-link">Collaborations</a>
+                        <a href="collaborations.html" class="nav-link" data-translate="navCollaborations">Collaborations</a>
                     </li>
                     <li class="nav-item">
-                        <a href="mobility.html" class="nav-link">Mobility</a>
+                        <a href="mobility.html" class="nav-link" data-translate="navMobility">Mobility</a>
                     </li>
                     <li class="nav-item">
-                        <a href="results.html" class="nav-link active">Results</a>
+                        <a href="results.html" class="nav-link active" data-translate="navResults">Results</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#contact" class="nav-link">Contact</a>
+                        <a href="index.html#contact" class="nav-link" data-translate="navContact">Contact</a>
+                    </li>
+                    <li class="nav-item nav-lang-item">
+                        <div class="lang-selector">
+                            <button class="lang-toggle" id="langToggle" aria-label="Select language">
+                                <img src="images/Flag_of_Europe.svg.png" alt="Language" class="lang-flag" id="currentLangFlag">
+                                <span class="lang-code" id="currentLangCode">EN</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <ul class="lang-menu" id="langMenu">
+                                <li class="lang-option" data-lang="en">
+                                    <img src="images/Flag_of_Europe.svg.png" alt="English" class="lang-flag">
+                                    <span>English</span>
+                                </li>
+                                <li class="lang-option" data-lang="tr">
+                                    <img src="images/turkey flag.png" alt="Turkish" class="lang-flag">
+                                    <span>Türkçe</span>
+                                </li>
+                                <li class="lang-option" data-lang="is">
+                                    <img src="images/Iceland flag.png" alt="Icelandic" class="lang-flag">
+                                    <span>Íslenska</span>
+                                </li>
+                                <li class="lang-option" data-lang="es">
+                                    <img src="images/spain flag.png" alt="Spanish" class="lang-flag">
+                                    <span>Español</span>
+                                </li>
+                                <li class="lang-option" data-lang="hu">
+                                    <img src="images/Hungary flag.png" alt="Hungarian" class="lang-flag">
+                                    <span>Magyar</span>
+                                </li>
+                                <li class="lang-option" data-lang="ca">
+                                    <img src="images/spain flag.png" alt="Catalan" class="lang-flag">
+                                    <span>Català</span>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -46,7 +120,7 @@
         <!-- Page Header -->
         <section class="page-header">
             <div class="container">
-                <h1 class="page-title">Project Results and Impact</h1>
+                <h1 class="page-title" data-translate="resultsTitle">Project Results and Impact</h1>
             </div>
         </section>
 
@@ -59,8 +133,8 @@
                             <img src="images/image1(home).jpeg" alt="Environmental Awareness" class="result-img">
                         </div>
                         <div class="result-icon">✓</div>
-                        <h3 class="result-title">Increased Environmental Awareness</h3>
-                        <p class="result-description">Students across partner schools have developed a deeper understanding of environmental challenges and their role in protecting natural resources.</p>
+                        <h3 class="result-title" data-translate="result1Title">Increased Environmental Awareness</h3>
+                        <p class="result-description" data-translate="result1Desc">Students across partner schools have developed a deeper understanding of environmental challenges and their role in protecting natural resources.</p>
                     </div>
                     
                     <div class="result-item">
@@ -68,8 +142,8 @@
                             <img src="images/image2(home).jpeg" alt="International Cooperation" class="result-img">
                         </div>
                         <div class="result-icon">✓</div>
-                        <h3 class="result-title">Strong International Cooperation</h3>
-                        <p class="result-description">Partner schools have built lasting relationships, sharing educational approaches and collaborating on environmental initiatives.</p>
+                        <h3 class="result-title" data-translate="result2Title">Strong International Cooperation</h3>
+                        <p class="result-description" data-translate="result2Desc">Partner schools have built lasting relationships, sharing educational approaches and collaborating on environmental initiatives.</p>
                     </div>
                     
                     <div class="result-item">
@@ -77,8 +151,8 @@
                             <img src="images/image3(home).jpeg" alt="Learning Experiences" class="result-img">
                         </div>
                         <div class="result-icon">✓</div>
-                        <h3 class="result-title">Hands-on Learning Experiences</h3>
-                        <p class="result-description">Through mobility and field activities, students have gained practical experience in environmental protection and sustainability practices.</p>
+                        <h3 class="result-title" data-translate="result3Title">Hands-on Learning Experiences</h3>
+                        <p class="result-description" data-translate="result3Desc">Through mobility and field activities, students have gained practical experience in environmental protection and sustainability practices.</p>
                     </div>
                     
                     <div class="result-item">
@@ -86,8 +160,8 @@
                             <img src="images/water picture.jpg" alt="Water Protection Understanding" class="result-img">
                         </div>
                         <div class="result-icon">✓</div>
-                        <h3 class="result-title">Water Protection Understanding</h3>
-                        <p class="result-description">Improved understanding of water protection and sustainability has been achieved through collaborative workshops and educational activities.</p>
+                        <h3 class="result-title" data-translate="result4Title">Water Protection Understanding</h3>
+                        <p class="result-description" data-translate="result4Desc">Improved understanding of water protection and sustainability has been achieved through collaborative workshops and educational activities.</p>
                     </div>
                     
                     <div class="result-item">
@@ -95,8 +169,8 @@
                             <img src="images/Intercultural Communication pic.jpg" alt="Intercultural Communication" class="result-img">
                         </div>
                         <div class="result-icon">✓</div>
-                        <h3 class="result-title">Intercultural Communication</h3>
-                        <p class="result-description">Development of intercultural communication skills has strengthened cultural understanding and shared responsibility among participants.</p>
+                        <h3 class="result-title" data-translate="result5Title">Intercultural Communication</h3>
+                        <p class="result-description" data-translate="result5Desc">Development of intercultural communication skills has strengthened cultural understanding and shared responsibility among participants.</p>
                     </div>
                 </div>
             </div>
@@ -113,22 +187,22 @@
                             <img src="images/logo-logo.avif" alt="Think Blue Go Green" class="footer-logo-img">
                             <h3 class="footer-logo-text">Think Blue Go Green</h3>
                         </div>
-                        <p class="footer-description">An international educational project bringing young people together to protect water resources and strengthen environmental awareness through cooperation and mobility.</p>
+                        <p class="footer-description" data-translate="footerDescription">An international educational project bringing young people together to protect water resources and strengthen environmental awareness through cooperation and mobility.</p>
                     </div>
                     
                     <div class="footer-column footer-links">
-                        <h4 class="footer-title">Quick Links</h4>
+                        <h4 class="footer-title" data-translate="footerQuickLinks">Quick Links</h4>
                         <ul class="footer-menu">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="collaborations.html">Collaborations</a></li>
-                            <li><a href="mobility.html">Mobility</a></li>
-                            <li><a href="results.html">Results</a></li>
-                            <li><a href="index.html#contact">Contact</a></li>
+                            <li><a href="index.html" data-translate="navHome">Home</a></li>
+                            <li><a href="collaborations.html" data-translate="navCollaborations">Collaborations</a></li>
+                            <li><a href="mobility.html" data-translate="navMobility">Mobility</a></li>
+                            <li><a href="results.html" data-translate="navResults">Results</a></li>
+                            <li><a href="index.html#contact" data-translate="navContact">Contact</a></li>
                         </ul>
                     </div>
                     
                     <div class="footer-column footer-contact">
-                        <h4 class="footer-title">Contact</h4>
+                        <h4 class="footer-title" data-translate="footerContact">Contact</h4>
                         <div class="footer-contact-info">
                             <a href="mailto:contact@thinkbluegogreen.eu" class="footer-contact-item">
                                 <span class="contact-icon">✉</span>
@@ -160,23 +234,23 @@
                     </div>
                     
                     <div class="footer-column footer-partners">
-                        <h4 class="footer-title">Partner Countries</h4>
+                        <h4 class="footer-title" data-translate="footerPartnerCountries">Partner Countries</h4>
                         <div class="footer-flags">
                             <div class="footer-flag-item">
                                 <img src="images/turkey flag.png" alt="Turkey" class="footer-flag">
-                                <span>Turkey</span>
+                                <span data-translate="countryTurkey">Turkey</span>
                             </div>
                             <div class="footer-flag-item">
                                 <img src="images/spain flag.png" alt="Spain" class="footer-flag">
-                                <span>Spain</span>
+                                <span data-translate="countrySpain">Spain</span>
                             </div>
                             <div class="footer-flag-item">
                                 <img src="images/Iceland flag.png" alt="Iceland" class="footer-flag">
-                                <span>Iceland</span>
+                                <span data-translate="countryIceland">Iceland</span>
                             </div>
                             <div class="footer-flag-item">
                                 <img src="images/Hungary flag.png" alt="Hungary" class="footer-flag">
-                                <span>Hungary</span>
+                                <span data-translate="countryHungary">Hungary</span>
                             </div>
                         </div>
                     </div>
@@ -188,7 +262,7 @@
                 <div class="eu-logos-container">
                     <div class="eu-logo-item">
                         <img src="images/Flag_of_Europe.svg.png" alt="European Union" class="eu-flag">
-                        <span class="eu-logo-label">Funded by the European Union</span>
+                        <span class="eu-logo-label" data-translate="footerFundedBy">Funded by the European Union</span>
                     </div>
                     <div class="eu-logo-item">
                         <img src="images/eu turkey logo.jpg" alt="Erasmus+ Programme" class="eu-programme-logo">
@@ -199,18 +273,18 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="footer-bottom-content">
-                    <p class="footer-copyright">&copy; 2024 Think Blue Go Green Drink Clean. All rights reserved.</p>
+                    <p class="footer-copyright" data-translate="footerCopyright">&copy; 2024 Think Blue Go Green Drink Clean. All rights reserved.</p>
                     <div class="footer-legal">
-                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link" data-translate="footerPrivacy">Privacy Policy</a>
                         <span class="footer-separator">•</span>
-                        <a href="#" class="footer-link">Terms of Use</a>
+                        <a href="#" class="footer-link" data-translate="footerTerms">Terms of Use</a>
                     </div>
                 </div>
                 <div class="footer-developer">
                     <button class="developer-btn" id="developerBtn">
-                        <span>Developed by</span>
+                        <span data-translate="footerDevelopedBy">Developed by</span>
                         <span class="developer-name">Fanari Labs</span>
-                        <span class="developer-hint">Click to contact</span>
+                        <span class="developer-hint" data-translate="footerClickContact">Click to contact</span>
                     </button>
                 </div>
             </div>
@@ -227,28 +301,28 @@
                         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                     </svg>
                 </div>
-                <h3 class="modal-title">Fanari Labs</h3>
-                <p class="modal-subtitle">AI-Powered Development Studio</p>
+                <h3 class="modal-title" data-translate="modalTitle">Fanari Labs</h3>
+                <p class="modal-subtitle" data-translate="modalSubtitle">AI-Powered Development Studio</p>
             </div>
             <div class="modal-body">
                 <div class="modal-info-item">
                     <div class="info-icon">🌐</div>
                     <div class="info-content">
-                        <span class="info-label">Website</span>
+                        <span class="info-label" data-translate="modalWebsite">Website</span>
                         <a href="https://fanarilabs.com" target="_blank" rel="noopener noreferrer" class="info-link">fanarilabs.com</a>
                     </div>
                 </div>
                 <div class="modal-info-item">
                     <div class="info-icon">📱</div>
                     <div class="info-content">
-                        <span class="info-label">Instagram</span>
+                        <span class="info-label" data-translate="modalInstagram">Instagram</span>
                         <a href="https://www.instagram.com/fanari.labs" target="_blank" rel="noopener noreferrer" class="info-link">@fanari.labs</a>
                     </div>
                 </div>
                 <div class="modal-info-item">
                     <div class="info-icon">📞</div>
                     <div class="info-content">
-                        <span class="info-label">Phone</span>
+                        <span class="info-label" data-translate="modalPhone">Phone</span>
                         <a href="tel:+905379295163" class="info-link">+90 537 929 51 63</a>
                     </div>
                 </div>
@@ -256,6 +330,8 @@
         </div>
     </div>
 
+    <script src="translations.js"></script>
+    <script src="translate.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -13,28 +13,102 @@
             <div class="nav-container">
                 <a href="index.html" class="nav-logo">
                     <img src="images/logo-logo.avif" alt="Think Blue Go Green Drink Clean" class="logo-img">
-                    <span class="logo-text">Think Blue Go Green</span>
+                    <span class="logo-text"></span>
                 </a>
-                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
-                    <span class="nav-toggle-line"></span>
-                    <span class="nav-toggle-line"></span>
-                    <span class="nav-toggle-line"></span>
-                </button>
+                <div class="nav-right">
+                    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                        <span class="nav-toggle-line"></span>
+                        <span class="nav-toggle-line"></span>
+                        <span class="nav-toggle-line"></span>
+                    </button>
+                    <div class="lang-selector nav-lang-selector-mobile">
+                        <button class="lang-toggle" id="langToggleMobile" aria-label="Select language">
+                            <img src="images/Flag_of_Europe.svg.png" alt="Language" class="lang-flag" id="currentLangFlagMobile">
+                            <span class="lang-code" id="currentLangCodeMobile">EN</span>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </button>
+                        <ul class="lang-menu" id="langMenuMobile">
+                            <li class="lang-option" data-lang="en">
+                                <img src="images/Flag_of_Europe.svg.png" alt="English" class="lang-flag">
+                                <span>English</span>
+                            </li>
+                            <li class="lang-option" data-lang="tr">
+                                <img src="images/turkey flag.png" alt="Turkish" class="lang-flag">
+                                <span>Türkçe</span>
+                            </li>
+                            <li class="lang-option" data-lang="is">
+                                <img src="images/Iceland flag.png" alt="Icelandic" class="lang-flag">
+                                <span>Íslenska</span>
+                            </li>
+                            <li class="lang-option" data-lang="es">
+                                <img src="images/spain flag.png" alt="Spanish" class="lang-flag">
+                                <span>Español</span>
+                            </li>
+                            <li class="lang-option" data-lang="hu">
+                                <img src="images/Hungary flag.png" alt="Hungarian" class="lang-flag">
+                                <span>Magyar</span>
+                            </li>
+                            <li class="lang-option" data-lang="ca">
+                                <img src="images/spain flag.png" alt="Catalan" class="lang-flag">
+                                <span>Català</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <ul class="nav-menu" id="navMenu">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="index.html" class="nav-link" data-translate="navHome">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="collaborations.html" class="nav-link active">Collaborations</a>
+                        <a href="collaborations.html" class="nav-link active" data-translate="navCollaborations">Collaborations</a>
                     </li>
                     <li class="nav-item">
-                        <a href="mobility.html" class="nav-link">Mobility</a>
+                        <a href="mobility.html" class="nav-link" data-translate="navMobility">Mobility</a>
                     </li>
                     <li class="nav-item">
-                        <a href="results.html" class="nav-link">Results</a>
+                        <a href="results.html" class="nav-link" data-translate="navResults">Results</a>
                     </li>
                     <li class="nav-item">
-                        <a href="index.html#contact" class="nav-link">Contact</a>
+                        <a href="index.html#contact" class="nav-link" data-translate="navContact">Contact</a>
+                    </li>
+                    <li class="nav-item nav-lang-item">
+                        <div class="lang-selector">
+                            <button class="lang-toggle" id="langToggle" aria-label="Select language">
+                                <img src="images/Flag_of_Europe.svg.png" alt="Language" class="lang-flag" id="currentLangFlag">
+                                <span class="lang-code" id="currentLangCode">EN</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <ul class="lang-menu" id="langMenu">
+                                <li class="lang-option" data-lang="en">
+                                    <img src="images/Flag_of_Europe.svg.png" alt="English" class="lang-flag">
+                                    <span>English</span>
+                                </li>
+                                <li class="lang-option" data-lang="tr">
+                                    <img src="images/turkey flag.png" alt="Turkish" class="lang-flag">
+                                    <span>Türkçe</span>
+                                </li>
+                                <li class="lang-option" data-lang="is">
+                                    <img src="images/Iceland flag.png" alt="Icelandic" class="lang-flag">
+                                    <span>Íslenska</span>
+                                </li>
+                                <li class="lang-option" data-lang="es">
+                                    <img src="images/spain flag.png" alt="Spanish" class="lang-flag">
+                                    <span>Español</span>
+                                </li>
+                                <li class="lang-option" data-lang="hu">
+                                    <img src="images/Hungary flag.png" alt="Hungarian" class="lang-flag">
+                                    <span>Magyar</span>
+                                </li>
+                                <li class="lang-option" data-lang="ca">
+                                    <img src="images/spain flag.png" alt="Catalan" class="lang-flag">
+                                    <span>Català</span>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -47,14 +121,14 @@
         <section class="collab-hero">
             <div class="collab-hero-inner">
                 <div class="collab-hero-text">
-                    <span class="collab-hero-label">International Partnerships</span>
-                    <h1 class="collab-hero-title">Partner Schools</h1>
-                    <p class="collab-hero-desc">Four schools across Europe unite to build meaningful educational experiences. Each brings local knowledge, strong academic traditions, and a shared commitment to environmental responsibility.</p>
+                    <span class="collab-hero-label" data-translate="collabLabel">International Partnerships</span>
+                    <h1 class="collab-hero-title" data-translate="collabTitle">Partner Schools</h1>
+                    <p class="collab-hero-desc" data-translate="collabDesc">Four schools across Europe unite to build meaningful educational experiences. Each brings local knowledge, strong academic traditions, and a shared commitment to environmental responsibility.</p>
                     <div class="collab-hero-flags">
-                        <div class="collab-flag-chip"><img src="images/turkey flag.png" alt="Turkey flag"><span>Turkey</span></div>
-                        <div class="collab-flag-chip"><img src="images/spain flag.png" alt="Spain flag"><span>Spain</span></div>
-                        <div class="collab-flag-chip"><img src="images/Iceland flag.png" alt="Iceland flag"><span>Iceland</span></div>
-                        <div class="collab-flag-chip"><img src="images/Hungary flag.png" alt="Hungary flag"><span>Hungary</span></div>
+                        <div class="collab-flag-chip"><img src="images/turkey flag.png" alt="Turkey flag"><span data-translate="countryTurkey">Turkey</span></div>
+                        <div class="collab-flag-chip"><img src="images/spain flag.png" alt="Spain flag"><span data-translate="countrySpain">Spain</span></div>
+                        <div class="collab-flag-chip"><img src="images/Iceland flag.png" alt="Iceland flag"><span data-translate="countryIceland">Iceland</span></div>
+                        <div class="collab-flag-chip"><img src="images/Hungary flag.png" alt="Hungary flag"><span data-translate="countryHungary">Hungary</span></div>
                     </div>
                 </div>
                 <div class="collab-hero-visual">
@@ -76,7 +150,7 @@
                         <img src="images/100 yil school pic.webp" alt="100. Yıl Anadolu Lisesi" class="collab-photo">
                         <div class="collab-flag-badge">
                             <img src="images/turkey flag.png" alt="Turkey">
-                            <span>Turkey</span>
+                            <span data-translate="countryTurkey">Turkey</span>
                         </div>
                         <div class="collab-logo-chip">100. Yıl</div>
                     </div>
@@ -84,14 +158,14 @@
                 <div class="collab-content">
                     <div class="collab-country-tag">
                         <img src="images/turkey flag.png" alt="Turkey">
-                        <span>Turkey</span>
+                        <span data-translate="countryTurkey">Turkey</span>
                     </div>
-                    <h2 class="collab-school-name">100. Yıl Anadolu Lisesi</h2>
-                    <p class="collab-location">Mersin, Turkey</p>
-                    <p class="collab-lead">Located in Mersin, where the Mediterranean's deep blue meets lush green landscapes, 100. Yıl Anadolu Lisesi places strong emphasis on environmental awareness and personal development.</p>
-                    <p class="collab-body">The school's educational approach supports clear thinking, individual attention, and respect for nature. Students are encouraged to understand the connection between natural beauty, mental clarity, and responsible citizenship.</p>
+                    <h2 class="collab-school-name" data-translate="turkeySchool">100. Yıl Anadolu Lisesi</h2>
+                    <p class="collab-location" data-translate="turkeyLocation">Mersin, Turkey</p>
+                    <p class="collab-lead" data-translate="turkeyLead">Located in Mersin, where the Mediterranean's deep blue meets lush green landscapes, 100. Yıl Anadolu Lisesi places strong emphasis on environmental awareness and personal development.</p>
+                    <p class="collab-body" data-translate="turkeyBody">The school's educational approach supports clear thinking, individual attention, and respect for nature. Students are encouraged to understand the connection between natural beauty, mental clarity, and responsible citizenship.</p>
                     <a href="https://drive.google.com/file/d/1v6kCU5x-HpV5jnqiKfazCBjHBSiDSamJ/view" target="_blank" rel="noopener noreferrer" class="collab-cert-btn">
-                        <span>View Erasmus Certificate</span>
+                        <span data-translate="collabCertBtn">View Erasmus Certificate</span>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
                 </div>
@@ -106,7 +180,7 @@
                         <img src="images/Institut Escola Pallerola pic.webp" alt="Institut Escola Pallerola" class="collab-photo">
                         <div class="collab-flag-badge">
                             <img src="images/spain flag.png" alt="Spain">
-                            <span>Spain</span>
+                            <span data-translate="countrySpain">Spain</span>
                         </div>
                         <div class="collab-logo-chip">
                             <img src="images/Institut Escola Pallerola logo.jpg" alt="Institut Escola Pallerola Logo">
@@ -116,14 +190,14 @@
                 <div class="collab-content">
                     <div class="collab-country-tag">
                         <img src="images/spain flag.png" alt="Spain">
-                        <span>Spain</span>
+                        <span data-translate="countrySpain">Spain</span>
                     </div>
-                    <h2 class="collab-school-name">Institut Escola Pallerola</h2>
-                    <p class="collab-location">Sant Celoni, Spain</p>
-                    <p class="collab-lead">Situated in Sant Celoni, Institut Escola Pallerola blends vibrant city life with the richness of the Catalan natural environment.</p>
-                    <p class="collab-body">The school follows a competency-based educational approach, preparing students for active participation in democratic society. Collaboration, respect, and inclusivity are central values, supported by close involvement with families and the local community.</p>
+                    <h2 class="collab-school-name" data-translate="spainSchool">Institut Escola Pallerola</h2>
+                    <p class="collab-location" data-translate="spainLocation">Sant Celoni, Spain</p>
+                    <p class="collab-lead" data-translate="spainLead">Situated in Sant Celoni, Institut Escola Pallerola blends vibrant city life with the richness of the Catalan natural environment.</p>
+                    <p class="collab-body" data-translate="spainBody">The school follows a competency-based educational approach, preparing students for active participation in democratic society. Collaboration, respect, and inclusivity are central values, supported by close involvement with families and the local community.</p>
                     <a href="https://drive.google.com/file/d/1g6pOs6le40SlxFmOL6tF0AFp3bVWOVDP/view" target="_blank" rel="noopener noreferrer" class="collab-cert-btn">
-                        <span>View Erasmus Certificate</span>
+                        <span data-translate="collabCertBtn">View Erasmus Certificate</span>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
                 </div>
@@ -138,7 +212,7 @@
                         <img src="images/Grunnskóli Bolungarvíkur pic.jpg" alt="Grunnskóli Bolungarvíkur" class="collab-photo">
                         <div class="collab-flag-badge">
                             <img src="images/Iceland flag.png" alt="Iceland">
-                            <span>Iceland</span>
+                            <span data-translate="countryIceland">Iceland</span>
                         </div>
                         <div class="collab-logo-chip">
                             <img src="images/Grunnskóli Bolungarvíkur logo.jpg" alt="Grunnskóli Bolungarvíkur Logo">
@@ -148,14 +222,14 @@
                 <div class="collab-content">
                     <div class="collab-country-tag">
                         <img src="images/Iceland flag.png" alt="Iceland">
-                        <span>Iceland</span>
+                        <span data-translate="countryIceland">Iceland</span>
                     </div>
-                    <h2 class="collab-school-name">Grunnskóli Bolungarvíkur</h2>
-                    <p class="collab-location">Bolungarvík, Iceland</p>
-                    <p class="collab-lead">Surrounded by Iceland's unique and powerful natural landscapes, Grunnskóli Bolungarvíkur provides a warm and welcoming environment for students.</p>
-                    <p class="collab-body">As a UNESCO school, it promotes sustainability, environmental responsibility, and respect for cultural diversity. Education focuses on discovering individual talents while fostering responsible and active citizenship.</p>
+                    <h2 class="collab-school-name" data-translate="icelandSchool">Grunnskóli Bolungarvíkur</h2>
+                    <p class="collab-location" data-translate="icelandLocation">Bolungarvík, Iceland</p>
+                    <p class="collab-lead" data-translate="icelandLead">Surrounded by Iceland's unique and powerful natural landscapes, Grunnskóli Bolungarvíkur provides a warm and welcoming environment for students.</p>
+                    <p class="collab-body" data-translate="icelandBody">As a UNESCO school, it promotes sustainability, environmental responsibility, and respect for cultural diversity. Education focuses on discovering individual talents while fostering responsible and active citizenship.</p>
                     <a href="https://drive.google.com/file/d/1MgubZ93sTgkUA1Qk7hlSrxxrlZIGt954/view" target="_blank" rel="noopener noreferrer" class="collab-cert-btn">
-                        <span>View Erasmus Certificate</span>
+                        <span data-translate="collabCertBtn">View Erasmus Certificate</span>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
                 </div>
@@ -170,7 +244,7 @@
                         <img src="images/Kossuth Lajos Gimnázium és Általános Iskola pic.jpg" alt="Kossuth Lajos Gimnázium és Általános Iskola" class="collab-photo">
                         <div class="collab-flag-badge">
                             <img src="images/Hungary flag.png" alt="Hungary">
-                            <span>Hungary</span>
+                            <span data-translate="countryHungary">Hungary</span>
                         </div>
                         <div class="collab-logo-chip">
                             <img src="images/Kossuth Lajos Gimnázium és Általános Iskola logo.jpg" alt="Kossuth Lajos Gimnázium és Általános Iskola Logo">
@@ -180,14 +254,14 @@
                 <div class="collab-content">
                     <div class="collab-country-tag">
                         <img src="images/Hungary flag.png" alt="Hungary">
-                        <span>Hungary</span>
+                        <span data-translate="countryHungary">Hungary</span>
                     </div>
-                    <h2 class="collab-school-name">Kossuth Lajos Gimnázium és Általános Iskola</h2>
-                    <p class="collab-location">Tiszafüred, Hungary</p>
-                    <p class="collab-lead">Located in Tiszafüred, Kossuth Lajos Gimnázium és Általános Iskola offers a well-rounded education supported by strong academic traditions.</p>
-                    <p class="collab-body">The school provides extensive opportunities in mathematics, science, IT, humanities, and languages, alongside international experiences through Erasmus and Comenius projects.</p>
+                    <h2 class="collab-school-name" data-translate="hungarySchool">Kossuth Lajos Gimnázium és Általános Iskola</h2>
+                    <p class="collab-location" data-translate="hungaryLocation">Tiszafüred, Hungary</p>
+                    <p class="collab-lead" data-translate="hungaryLead">Located in Tiszafüred, Kossuth Lajos Gimnázium és Általános Iskola offers a well-rounded education supported by strong academic traditions.</p>
+                    <p class="collab-body" data-translate="hungaryBody">The school provides extensive opportunities in mathematics, science, IT, humanities, and languages, alongside international experiences through Erasmus and Comenius projects.</p>
                     <a href="https://drive.google.com/file/d/1LSzFc3evU7SFWHSwMXJaqR2HVij7Su8l/view" target="_blank" rel="noopener noreferrer" class="collab-cert-btn">
-                        <span>View Erasmus Certificate</span>
+                        <span data-translate="collabCertBtn">View Erasmus Certificate</span>
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
                 </div>
@@ -205,22 +279,22 @@
                             <img src="images/logo-logo.avif" alt="Think Blue Go Green" class="footer-logo-img">
                             <h3 class="footer-logo-text">Think Blue Go Green</h3>
                         </div>
-                        <p class="footer-description">An international educational project bringing young people together to protect water resources and strengthen environmental awareness through cooperation and mobility.</p>
+                        <p class="footer-description" data-translate="footerDescription">An international educational project bringing young people together to protect water resources and strengthen environmental awareness through cooperation and mobility.</p>
                     </div>
                     
                     <div class="footer-column footer-links">
-                        <h4 class="footer-title">Quick Links</h4>
+                        <h4 class="footer-title" data-translate="footerQuickLinks">Quick Links</h4>
                         <ul class="footer-menu">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="collaborations.html">Collaborations</a></li>
-                            <li><a href="mobility.html">Mobility</a></li>
-                            <li><a href="results.html">Results</a></li>
-                            <li><a href="index.html#contact">Contact</a></li>
+                            <li><a href="index.html" data-translate="navHome">Home</a></li>
+                            <li><a href="collaborations.html" data-translate="navCollaborations">Collaborations</a></li>
+                            <li><a href="mobility.html" data-translate="navMobility">Mobility</a></li>
+                            <li><a href="results.html" data-translate="navResults">Results</a></li>
+                            <li><a href="index.html#contact" data-translate="navContact">Contact</a></li>
                         </ul>
                     </div>
                     
                     <div class="footer-column footer-contact">
-                        <h4 class="footer-title">Contact</h4>
+                        <h4 class="footer-title" data-translate="footerContact">Contact</h4>
                         <div class="footer-contact-info">
                             <a href="mailto:100yal.tgd.erasmus@gmail.com" class="footer-contact-item">
                                 <span class="contact-icon">✉</span>
@@ -252,23 +326,23 @@
                     </div>
                     
                     <div class="footer-column footer-partners">
-                        <h4 class="footer-title">Partner Countries</h4>
+                        <h4 class="footer-title" data-translate="footerPartnerCountries">Partner Countries</h4>
                         <div class="footer-flags">
                             <div class="footer-flag-item">
                                 <img src="images/turkey flag.png" alt="Turkey" class="footer-flag">
-                                <span>Turkey</span>
+                                <span data-translate="countryTurkey">Turkey</span>
                             </div>
                             <div class="footer-flag-item">
                                 <img src="images/spain flag.png" alt="Spain" class="footer-flag">
-                                <span>Spain</span>
+                                <span data-translate="countrySpain">Spain</span>
                             </div>
                             <div class="footer-flag-item">
                                 <img src="images/Iceland flag.png" alt="Iceland" class="footer-flag">
-                                <span>Iceland</span>
+                                <span data-translate="countryIceland">Iceland</span>
                             </div>
                             <div class="footer-flag-item">
                                 <img src="images/Hungary flag.png" alt="Hungary" class="footer-flag">
-                                <span>Hungary</span>
+                                <span data-translate="countryHungary">Hungary</span>
                             </div>
                         </div>
                     </div>
@@ -280,7 +354,7 @@
                 <div class="eu-logos-container">
                     <div class="eu-logo-item">
                         <img src="images/Flag_of_Europe.svg.png" alt="European Union" class="eu-flag">
-                        <span class="eu-logo-label">Funded by the European Union</span>
+                        <span class="eu-logo-label" data-translate="footerFundedBy">Funded by the European Union</span>
                     </div>
                     <div class="eu-logo-item">
                         <img src="images/eu turkey logo.jpg" alt="Erasmus+ Programme" class="eu-programme-logo">
@@ -291,18 +365,18 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="footer-bottom-content">
-                    <p class="footer-copyright">&copy; 2024 Think Blue Go Green Drink Clean. All rights reserved.</p>
+                    <p class="footer-copyright" data-translate="footerCopyright">&copy; 2024 Think Blue Go Green Drink Clean. All rights reserved.</p>
                     <div class="footer-legal">
-                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link" data-translate="footerPrivacy">Privacy Policy</a>
                         <span class="footer-separator">•</span>
-                        <a href="#" class="footer-link">Terms of Use</a>
+                        <a href="#" class="footer-link" data-translate="footerTerms">Terms of Use</a>
                     </div>
                 </div>
                 <div class="footer-developer">
                     <button class="developer-btn" id="developerBtn">
-                        <span>Developed by</span>
+                        <span data-translate="footerDevelopedBy">Developed by</span>
                         <span class="developer-name">Fanari Labs</span>
-                        <span class="developer-hint">Click to contact</span>
+                        <span class="developer-hint" data-translate="footerClickContact">Click to contact</span>
                     </button>
                 </div>
             </div>
@@ -319,28 +393,28 @@
                         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                     </svg>
                 </div>
-                <h3 class="modal-title">Fanari Labs</h3>
-                <p class="modal-subtitle">AI-Powered Development Studio</p>
+                <h3 class="modal-title" data-translate="modalTitle">Fanari Labs</h3>
+                <p class="modal-subtitle" data-translate="modalSubtitle">AI-Powered Development Studio</p>
             </div>
             <div class="modal-body">
                 <div class="modal-info-item">
                     <div class="info-icon">🌐</div>
                     <div class="info-content">
-                        <span class="info-label">Website</span>
+                        <span class="info-label" data-translate="modalWebsite">Website</span>
                         <a href="https://fanarilabs.com" target="_blank" rel="noopener noreferrer" class="info-link">fanarilabs.com</a>
                     </div>
                 </div>
                 <div class="modal-info-item">
                     <div class="info-icon">📱</div>
                     <div class="info-content">
-                        <span class="info-label">Instagram</span>
+                        <span class="info-label" data-translate="modalInstagram">Instagram</span>
                         <a href="https://www.instagram.com/fanari.labs" target="_blank" rel="noopener noreferrer" class="info-link">@fanari.labs</a>
                     </div>
                 </div>
                 <div class="modal-info-item">
                     <div class="info-icon">📞</div>
                     <div class="info-content">
-                        <span class="info-label">Phone</span>
+                        <span class="info-label" data-translate="modalPhone">Phone</span>
                         <a href="tel:+905379295163" class="info-link">+90 537 929 51 63</a>
                     </div>
                 </div>
@@ -348,6 +422,8 @@
         </div>
     </div>
 
+    <script src="translations.js"></script>
+    <script src="translate.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
