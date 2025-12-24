@@ -55,6 +55,11 @@ const translations = {
         contactEmail: "Email",
         contactProjectInsta: "Project Instagram",
         contactSchoolInsta: "School Instagram",
+        contactTwinSpace: "TwinSpace",
+        contactTwinSpaceLink: "Visit TwinSpace",
+        
+        // EU Funding Section
+        euFundedBy: "Funded by the European Union",
         
         // Footer
         footerDescription: "An international educational project bringing young people together to protect water resources and strengthen environmental awareness through cooperation and mobility.",
@@ -224,6 +229,11 @@ const translations = {
         contactEmail: "E-posta",
         contactProjectInsta: "Proje Instagram",
         contactSchoolInsta: "Okul Instagram",
+        contactTwinSpace: "TwinSpace",
+        contactTwinSpaceLink: "TwinSpace'i Ziyaret Et",
+        
+        // EU Funding Section
+        euFundedBy: "Avrupa Birliği tarafından finanse edilmektedir",
         
         // Footer
         footerDescription: "Gençleri bir araya getirerek su kaynaklarını korumak ve işbirliği ve hareketlilik yoluyla çevre bilincini güçlendirmek için uluslararası bir eğitim projesi.",
@@ -393,6 +403,11 @@ const translations = {
         contactEmail: "Netfang",
         contactProjectInsta: "Instagram Verkefnisins",
         contactSchoolInsta: "Instagram Skólans",
+        contactTwinSpace: "TwinSpace",
+        contactTwinSpaceLink: "Heimsækja TwinSpace",
+        
+        // EU Funding Section
+        euFundedBy: "Styrkt af Evrópusambandinu",
         
         // Footer
         footerDescription: "Alþjóðlegt menntunarverkefni sem sameinar ungt fólk til að vernda vatnsauðlindir og styrkja umhverfisvitund með samvinnu og hreyfingu.",
@@ -562,6 +577,11 @@ const translations = {
         contactEmail: "Correo Electrónico",
         contactProjectInsta: "Instagram del Proyecto",
         contactSchoolInsta: "Instagram de la Escuela",
+        contactTwinSpace: "TwinSpace",
+        contactTwinSpaceLink: "Visitar TwinSpace",
+        
+        // EU Funding Section
+        euFundedBy: "Financiado por la Unión Europea",
         
         // Footer
         footerDescription: "Un proyecto educativo internacional que reúne a jóvenes para proteger los recursos hídricos y fortalecer la conciencia ambiental a través de la cooperación y la movilidad.",
@@ -731,6 +751,11 @@ const translations = {
         contactEmail: "E-mail",
         contactProjectInsta: "Projekt Instagram",
         contactSchoolInsta: "Iskola Instagram",
+        contactTwinSpace: "TwinSpace",
+        contactTwinSpaceLink: "TwinSpace Meglátogatása",
+        
+        // EU Funding Section
+        euFundedBy: "Az Európai Unió által finanszírozva",
         
         // Footer
         footerDescription: "Egy nemzetközi oktatási projekt, amely összehozza a fiatalokat a vízkészletek védelme és a környezeti tudatosság erősítése érdekében együttműködés és mobilitás révén.",
@@ -900,6 +925,11 @@ const translations = {
         contactEmail: "Correu Electrònic",
         contactProjectInsta: "Instagram del Projecte",
         contactSchoolInsta: "Instagram de l'Escola",
+        contactTwinSpace: "TwinSpace",
+        contactTwinSpaceLink: "Visitar TwinSpace",
+        
+        // EU Funding Section
+        euFundedBy: "Finançat per la Unió Europea",
         
         // Footer
         footerDescription: "Un projecte educatiu internacional que reuneix joves per protegir els recursos hídrics i enfortir la consciència ambiental a través de la cooperació i la mobilitat.",
