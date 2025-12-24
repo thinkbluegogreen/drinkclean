@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="activitiesTitle">Activities | Think Blue Go Green Drink Clean</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">
+                    <img src="images/logo-logo.avif" alt="Think Blue Go Green Drink Clean" class="logo-img">
+                    <span class="logo-text"></span>
+                </a>
+                <div class="nav-right">
+                    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                        <span class="nav-toggle-line"></span>
+                        <span class="nav-toggle-line"></span>
+                        <span class="nav-toggle-line"></span>
+                    </button>
+                    <div class="lang-selector nav-lang-selector-mobile">
+                        <button class="lang-toggle" id="langToggleMobile" aria-label="Select language">
+                            <img src="images/Flag_of_Europe.svg.png" alt="Language" class="lang-flag" id="currentLangFlagMobile">
+                            <span class="lang-code" id="currentLangCodeMobile">EN</span>
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9l6 6 6-6"/>
+                            </svg>
+                        </button>
+                        <ul class="lang-menu" id="langMenuMobile">
+                            <li class="lang-option" data-lang="en">
+                                <img src="images/Flag_of_Europe.svg.png" alt="English" class="lang-flag">
+                                <span>English</span>
+                            </li>
+                            <li class="lang-option" data-lang="tr">
+                                <img src="images/turkey flag.png" alt="Turkish" class="lang-flag">
+                                <span>Türkçe</span>
+                            </li>
+                            <li class="lang-option" data-lang="is">
+                                <img src="images/Iceland flag.png" alt="Icelandic" class="lang-flag">
+                                <span>Íslenska</span>
+                            </li>
+                            <li class="lang-option" data-lang="es">
+                                <img src="images/spain flag.png" alt="Spanish" class="lang-flag">
+                                <span>Español</span>
+                            </li>
+                            <li class="lang-option" data-lang="hu">
+                                <img src="images/Hungary flag.png" alt="Hungarian" class="lang-flag">
+                                <span>Magyar</span>
+                            </li>
+                            <li class="lang-option" data-lang="ca">
+                                <img src="images/spain flag.png" alt="Catalan" class="lang-flag">
+                                <span>Català</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" data-translate="navHome">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="collaborations.html" class="nav-link" data-translate="navCollaborations">Collaborations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="mobility.html" class="nav-link" data-translate="navMobility">Mobility</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="activities.html" class="nav-link active" data-translate="navActivities">Activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="results.html" class="nav-link" data-translate="navResults">Results</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#contact" class="nav-link" data-translate="navContact">Contact</a>
+                    </li>
+                    <li class="nav-item nav-lang-item">
+                        <div class="lang-selector">
+                            <button class="lang-toggle" id="langToggle" aria-label="Select language">
+                                <img src="images/Flag_of_Europe.svg.png" alt="Language" class="lang-flag" id="currentLangFlag">
+                                <span class="lang-code" id="currentLangCode">EN</span>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                            <ul class="lang-menu" id="langMenu">
+                                <li class="lang-option" data-lang="en">
+                                    <img src="images/Flag_of_Europe.svg.png" alt="English" class="lang-flag">
+                                    <span>English</span>
+                                </li>
+                                <li class="lang-option" data-lang="tr">
+                                    <img src="images/turkey flag.png" alt="Turkish" class="lang-flag">
+                                    <span>Türkçe</span>
+                                </li>
+                                <li class="lang-option" data-lang="is">
+                                    <img src="images/Iceland flag.png" alt="Icelandic" class="lang-flag">
+                                    <span>Íslenska</span>
+                                </li>
+                                <li class="lang-option" data-lang="es">
+                                    <img src="images/spain flag.png" alt="Spanish" class="lang-flag">
+                                    <span>Español</span>
+                                </li>
+                                <li class="lang-option" data-lang="hu">
+                                    <img src="images/Hungary flag.png" alt="Hungarian" class="lang-flag">
+                                    <span>Magyar</span>
+                                </li>
+                                <li class="lang-option" data-lang="ca">
+                                    <img src="images/spain flag.png" alt="Catalan" class="lang-flag">
+                                    <span>Català</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main activities-page">
+        <!-- Hero Header Section -->
+        <section class="activities-hero">
+            <div class="activities-hero-background">
+                <img src="images/water picture.jpg" alt="Water awareness activities" class="activities-hero-image">
+                <div class="activities-hero-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="activities-hero-content">
+                    <span class="activities-badge" data-translate="activitiesLabel">Local Activities</span>
+                    <h1 class="activities-hero-title" data-translate="activitiesTitle">Activities for Water Sustainability</h1>
+                    <p class="activities-hero-description" data-translate="activitiesIntro">Partner schools led local sessions to raise awareness of the most urgent water-related environmental challenges.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="activities-story-section">
+            <div class="container">
+                <div class="activities-story-wrapper">
+                    <div class="activities-story-header">
+                        <span class="activities-badge" data-translate="activitiesStoryTitle">Engaging Local Communities</span>
+                        <h2 class="activities-section-title" data-translate="activitiesStoryTitle">Engaging Local Communities</h2>
+                    </div>
+                    <div class="activities-story-content">
+                        <div class="activities-story-card">
+                            <div class="activities-story-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                </svg>
+                            </div>
+                            <p data-translate="activitiesParagraph1">As part of the Think Blue, Go Green and Drink Clean project, partner schools carried out a variety of local activities aimed at raising awareness of today's most pressing water-related environmental challenges. These activities were designed not only to inform, but also to inspire responsibility and action among students and teachers.</p>
+                        </div>
+                        <div class="activities-story-card">
+                            <div class="activities-story-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                    <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"></path>
+                                </svg>
+                            </div>
+                            <p data-translate="activitiesParagraph2">Interactive PowerPoint presentations were delivered in each partner institution, focusing on key topics such as water pollution, sustainable water use, the environmental impact of water sports, and the vital role of thermal and drinking water in human health and everyday life. Rather than being passive sessions, these presentations encouraged open discussion, questions, and critical thinking, allowing participants to reflect on their own habits and the wider impact of water misuse.</p>
+                        </div>
+                        <div class="activities-story-card">
+                            <div class="activities-story-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <p data-translate="activitiesParagraph3">By implementing these activities at a local level, the project ensured that its core messages reached a broad and diverse audience. Most importantly, it helped build a shared sense of responsibility and understanding of water sustainability across different countries, school communities, and cultures—strengthening the idea that protecting water resources is a global mission that starts locally.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section class="activities-resources-section">
+            <div class="container">
+                <div class="activities-resources-header">
+                    <span class="activities-badge" data-translate="activitiesResourcesTitle">Activity Presentations</span>
+                    <h2 class="activities-section-title" data-translate="activitiesResourcesHeader">Educational Materials</h2>
+                    <p class="activities-resources-description" data-translate="activitiesResourcesDesc">Download the presentation decks used in classrooms to spark discussion and action.</p>
+                </div>
+                <div class="activities-resources-grid">
+                    <a class="activities-resource-card" href="images/Climate%20change%20Presentation.pptx" download>
+                        <div class="activities-resource-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="activities-resource-content">
+                            <h3 class="activities-resource-title" data-translate="activitiesFileClimate">Climate Change Presentation</h3>
+                            <p class="activities-resource-meta" data-translate="activitiesDownload">Download</p>
+                        </div>
+                        <div class="activities-resource-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a class="activities-resource-card" href="images/Lake%20Tisza%27s%20attractions.pptx" download>
+                        <div class="activities-resource-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="activities-resource-content">
+                            <h3 class="activities-resource-title" data-translate="activitiesFileLakeTisza">Lake Tisza's Attractions</h3>
+                            <p class="activities-resource-meta" data-translate="activitiesDownload">Download</p>
+                        </div>
+                        <div class="activities-resource-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a class="activities-resource-card" href="images/The%20positive%20effects%20of%20thermal%20water.pptx" download>
+                        <div class="activities-resource-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="activities-resource-content">
+                            <h3 class="activities-resource-title" data-translate="activitiesFileThermal">Positive Effects of Thermal Water</h3>
+                            <p class="activities-resource-meta" data-translate="activitiesDownload">Download</p>
+                        </div>
+                        <div class="activities-resource-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a class="activities-resource-card" href="images/Water%20pollution%20(3)%20(1).pptx" download>
+                        <div class="activities-resource-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="activities-resource-content">
+                            <h3 class="activities-resource-title" data-translate="activitiesFileWaterPollution">Water Pollution</h3>
+                            <p class="activities-resource-meta" data-translate="activitiesDownload">Download</p>
+                        </div>
+                        <div class="activities-resource-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a class="activities-resource-card" href="images/Water%20sports%20in%20Hungary.pptx" download>
+                        <div class="activities-resource-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <div class="activities-resource-content">
+                            <h3 class="activities-resource-title" data-translate="activitiesFileWaterSports">Water Sports in Hungary</h3>
+                            <p class="activities-resource-meta" data-translate="activitiesDownload">Download</p>
+                        </div>
+                        <div class="activities-resource-arrow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="activities-gallery-section">
+            <div class="container">
+                <div class="activities-gallery-header">
+                    <span class="activities-badge" data-translate="activitiesGalleryTitle">Activity Highlights</span>
+                    <h2 class="activities-section-title" data-translate="activitiesGalleryHeader">In Action</h2>
+                    <p class="activities-gallery-description" data-translate="activitiesGalleryDesc">Snapshots from local sessions across partner schools.</p>
+                </div>
+                <div class="activities-gallery-grid">
+                    <div class="activities-gallery-item">
+                        <div class="activities-gallery-image-wrapper">
+                            <img src="images/activity1.jpeg" alt="Students exploring water sustainability topics" loading="lazy" class="activities-gallery-image">
+                        </div>
+                        <div class="activities-gallery-caption">
+                            <p data-translate="activitiesImage1Caption">Students exploring water sustainability topics</p>
+                        </div>
+                    </div>
+                    <div class="activities-gallery-item">
+                        <div class="activities-gallery-image-wrapper">
+                            <img src="images/activity2.jpeg" alt="Collaborative discussions inspired by the presentations" loading="lazy" class="activities-gallery-image">
+                        </div>
+                        <div class="activities-gallery-caption">
+                            <p data-translate="activitiesImage2Caption">Collaborative discussions inspired by the presentations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-column footer-about">
+                        <div class="footer-logo">
+                            <img src="images/logo-logo.avif" alt="Think Blue Go Green" class="footer-logo-img">
+                            <h3 class="footer-logo-text">Think Blue Go Green</h3>
+                        </div>
+                        <p class="footer-description" data-translate="footerDescription">An international educational project bringing young people together to protect water resources and strengthen environmental awareness through cooperation and mobility.</p>
+                    </div>
+                    
+                    <div class="footer-column footer-links">
+                        <h4 class="footer-title" data-translate="footerQuickLinks">Quick Links</h4>
+                        <ul class="footer-menu">
+                            <li><a href="index.html" data-translate="navHome">Home</a></li>
+                            <li><a href="collaborations.html" data-translate="navCollaborations">Collaborations</a></li>
+                            <li><a href="mobility.html" data-translate="navMobility">Mobility</a></li>
+                            <li><a href="activities.html" data-translate="navActivities">Activities</a></li>
+                            <li><a href="results.html" data-translate="navResults">Results</a></li>
+                            <li><a href="index.html#contact" data-translate="navContact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column footer-contact">
+                        <h4 class="footer-title" data-translate="footerContact">Contact</h4>
+                        <div class="footer-contact-info">
+                            <a href="mailto:100yal.tgd.erasmus@gmail.com" class="footer-contact-item">
+                                <span class="contact-icon">✉</span>
+                                <span>100yal.tgd.erasmus@gmail.com</span>
+                            </a>
+                        </div>
+                        <div class="footer-social">
+                            <a href="#" class="social-icon" aria-label="Facebook">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/thinkbluegogreendrinkclean?igsh=MTViMnpubGF2eDhhcQ==" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="https://school-education.ec.europa.eu/en/etwinning/projects/think-blue-go-green-and-drink-clean/twinspace" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="TwinSpace">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-column footer-partners">
+                        <h4 class="footer-title" data-translate="footerPartnerCountries">Partner Countries</h4>
+                        <div class="footer-flags">
+                            <div class="footer-flag-item">
+                                <img src="images/turkey flag.png" alt="Turkey" class="footer-flag">
+                                <span data-translate="countryTurkey">Turkey</span>
+                            </div>
+                            <div class="footer-flag-item">
+                                <img src="images/spain flag.png" alt="Spain" class="footer-flag">
+                                <span data-translate="countrySpain">Spain</span>
+                            </div>
+                            <div class="footer-flag-item">
+                                <img src="images/Iceland flag.png" alt="Iceland" class="footer-flag">
+                                <span data-translate="countryIceland">Iceland</span>
+                            </div>
+                            <div class="footer-flag-item">
+                                <img src="images/Hungary flag.png" alt="Hungary" class="footer-flag">
+                                <span data-translate="countryHungary">Hungary</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-eu-logos">
+            <div class="container">
+                <div class="eu-logos-container">
+                    <div class="eu-logo-item">
+                        <img src="images/Flag_of_Europe.svg.png" alt="European Union" class="eu-flag">
+                        <span class="eu-logo-label" data-translate="footerFundedBy">Funded by the European Union</span>
+                    </div>
+                    <div class="eu-logo-item">
+                        <img src="images/eu turkey logo.jpg" alt="Erasmus+ Programme" class="eu-programme-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <p class="footer-copyright" data-translate="footerCopyright">&copy; 2024 Think Blue Go Green Drink Clean. All rights reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#" class="footer-link" data-translate="footerPrivacy">Privacy Policy</a>
+                        <span class="footer-separator">•</span>
+                        <a href="#" class="footer-link" data-translate="footerTerms">Terms of Use</a>
+                    </div>
+                </div>
+                <div class="footer-developer">
+                    <button class="developer-btn" id="developerBtn">
+                        <span data-translate="footerDevelopedBy">Developed by</span>
+                        <span class="developer-name">Fanari Labs</span>
+                        <span class="developer-hint" data-translate="footerClickContact">Click to contact</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Developer Popup Modal -->
+    <div class="modal-overlay" id="developerModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <h3 class="modal-title" data-translate="modalTitle">Fanari Labs</h3>
+                <p class="modal-subtitle" data-translate="modalSubtitle">AI-Powered Development Studio</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-info-item">
+                    <div class="info-icon">🌐</div>
+                    <div class="info-content">
+                        <span class="info-label" data-translate="modalWebsite">Website</span>
+                        <a href="https://fanarilabs.com" target="_blank" rel="noopener noreferrer" class="info-link">fanarilabs.com</a>
+                    </div>
+                </div>
+                <div class="modal-info-item">
+                    <div class="info-icon">📱</div>
+                    <div class="info-content">
+                        <span class="info-label" data-translate="modalInstagram">Instagram</span>
+                        <a href="https://www.instagram.com/fanari.labs" target="_blank" rel="noopener noreferrer" class="info-link">@fanari.labs</a>
+                    </div>
+                </div>
+                <div class="modal-info-item">
+                    <div class="info-icon">📞</div>
+                    <div class="info-content">
+                        <span class="info-label" data-translate="modalPhone">Phone</span>
+                        <a href="tel:+905379295163" class="info-link">+90 537 929 51 63</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="translations.js"></script>
+    <script src="translate.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
